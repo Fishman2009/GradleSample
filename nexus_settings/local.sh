@@ -1,0 +1,20 @@
+export APP_HOME=/opt/app
+export TOMCAT_HOME=$APP_HOME/apache-tomcat-8.0.26
+export TYPESAFE_HOME=$APP_HOME/activator-dist-1.3.6
+export GROOVY_HOME=$APP_HOME/groovy-2.4.4
+export SCALA_HOME=$APP_HOME/scala-2.11.7
+export SPARK_HOME=$APP_HOME/spark-1.3.1-bin-hadoop2.6
+export HADOOP_HOME=$APP_HOME/hadoop-2.6.1
+export SBT_HOME=$APP_HOME/sbt
+export JAVA_HOME=$APP_HOME/jdk1.8.0_60
+export GRADLE_HOME=$APP_HOME/gradle-2.7
+export ANT_HOME=$APP_HOME/apache-ant-1.9.5
+export MAVEN_HOME=$APP_HOME/apache-maven-3.3.3
+export CASSANDRA_HOME=$APP_HOME/apache-cassandra-2.1.5
+export HIVE_HOME=$APP_HOME/apache-hive-1.2.0-bin
+export DERBY_HOME=$APP_HOME/db-derby-10.11.1.1-bin
+export HBASE_HOME=$APP_HOME/hbase-1.0.1.1
+export GOROOT=$APP_HOME/go
+export CLANG_HOME=$APP_HOME/clang
+
+export PATH=$APP_HOME/bin:$JAVA_HOME/bin:$CASSANDRA_HOME/bin:$HIVE_HOME/bin:$DERBY_HOME/bin:$HBASE_HOME/bin:$GRADLE_HOME/bin:$ANT_HOME/bin:$MAVEN_HOME/bin::$TOMCAT_HOME/bin:$TYPESAFE_HOME:$GROOVY_HOME/bin:$SCALA_HOME/bin:$SPARK_HOME/bin:$HADOOP_HOME/bin:$HADOOP_HOME/sbin:$SBT_HOME/bin:$GOROOT/bin:$CLANG_HOME/bin:$PATH

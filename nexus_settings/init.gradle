@@ -1,0 +1,20 @@
+allprojects{
+    repositories {
+        def REPOSITORY_URL = 'http://localhost:8081/nexus/content/groups/public/'
+        all { ArtifactRepository repo ->
+            def url = repo.url.toString()
+            if ((repo instanceof MavenArtifactRepository) && (
+                url.startsWith('https://repo1.maven.org/maven2') 
+                || url.startsWith('https://jcenter.bintray.com') 
+                || url.startsWith('https://repo.spring.io')
+                || url.startsWith('http://repository.jboss.org/nexus/content/groups/public/')
+                )) {
+                project.logger.lifecycle "Repository ${repo.url} replaced by ${REPOSITORY_URL} ."
+                remove repo
+           }
+        }
+        maven {
+            url REPOSITORY_URL
+        }
+    }
+}

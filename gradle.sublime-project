@@ -1,0 +1,42 @@
+{
+	"build_systems":
+	[
+		{
+			"name" : "Gradle",
+		    "shell_cmd": "gradle :build",
+		    "working_dir" : "${project_path:${file_path}}",
+		    "file_regex": "^(?::compileJava)?(.*):([0-9]*):\\s+(.*)$",
+		    "variants": [
+		        {   
+		            "shell_cmd": "gradle run",
+		            "name": "Run",
+		        },
+		        {   
+		            "shell_cmd": "gradle clean build",
+		            "name": "Rebuild",
+		        },
+		        {   
+		            "shell_cmd": "gradle test",
+		            "name": "Test",
+		        },
+		        {   
+		            "shell_cmd": "gradle clean",
+		            "name": "Clean",
+		        },
+		    ]
+		}
+	],
+	"folders":
+	[
+		{
+			"path": ".",
+            "folder_exclude_patterns": [".gradle", "build", ".svn", ".git", ".cvs"],
+            "file_exclude_patterns": ["*.class"]
+		}
+	],
+	"settings":
+	{
+		"tab_size": 4,
+		"translate_tabs_to_spaces": true
+	}
+}
