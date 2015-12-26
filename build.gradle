@@ -360,7 +360,7 @@ dependencies {
     compile 'org.jbpm:jbpm-human-task-audit:6.3.0.Final'
     compile 'org.jbpm:jbpm-human-task-jpa:6.3.0.Final'
     compile 'org.jbpm:jbpm-query-jpa:6.3.0.Final'
-
+/*
     compile 'org.mule:mule-core:3.7.0'
     compile 'org.mule.transports:mule-transport-vm:3.7.0'
     compile 'org.mule.transports:mule-transport-http:3.7.0'
@@ -392,7 +392,7 @@ dependencies {
     compile 'org.mule.modules:mule-module-http:3.7.0'
     compile 'org.mule.modules:mule-module-db:3.7.0'
     compile 'org.mule.modules:mule-module-ws:3.7.0'
-
+*/
     compile 'org.infinispan:infinispan-core:8.1.0.Final'
     compile 'org.infinispan:infinispan-client-hotrod:8.1.0.Final'
     compile 'org.infinispan:infinispan-commons:8.1.0.Final'
