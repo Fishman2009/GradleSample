@@ -11,6 +11,7 @@ XQJ http://xqj.net/maven/
 OsChina  http://maven.oschina.net/content/groups/public/
 ```
 # Gradle设置init.gradle配置文件
+~/.gradle/init.gradle
 ```
 allprojects{
     repositories {
