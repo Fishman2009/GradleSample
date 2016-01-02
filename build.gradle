@@ -1,6 +1,7 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'groovy'
+apply plugin: 'idea'
 
 group = "com.gscmcc.examples"
 version = '1.0'

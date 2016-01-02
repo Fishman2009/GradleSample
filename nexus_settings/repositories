@@ -1,4 +1,6 @@
 [repositories]
   local
-  my-ivy-proxy-releases: http://127.0.0.1:8081/nexus/content/groups/public/, [organization]/[module]/(scala_[scalaVersion]/)(sbt_[sbtVersion]/)[revision]/[type]s/[artifact](-[classifier]).[ext]
-  my-maven-proxy-releases: http://127.0.0.1:8081/nexus/content/groups/public/
+  nexus: http://localhost:8081/nexus/content/groups/public/
+  nexus-ivy: http://localhost:8081/nexus/content/groups/ivys/, [organization]/[module]/[revision]/[type]s/[artifact](-[classifier]).[ext]
+  sonatype-oss-releases: http://localhost:8081/nexus/content/repositories/oss-sonatype-releases/
+  sonatype-snapshots: https://oss.sonatype.org/content/repositories/snapshots
