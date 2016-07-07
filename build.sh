@@ -1,2 +1,2 @@
 #!/bin/sh
-gradle eclipse
+gradle build && gradle eclipse
